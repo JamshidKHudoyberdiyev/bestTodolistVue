@@ -23,7 +23,7 @@ const todCompleted = computed(() => {
 
 const fetchTodo = () => {
     const data = JSON.parse(localStorage.getItem('todoList'))
-    console.log(data._value);
+
     if (data) {
         todoList.value = data._value
     }
@@ -151,4 +151,5 @@ h1 {
         text-align: center;
         font-size: 14px;
     }
-}</style>
+}
+</style>
